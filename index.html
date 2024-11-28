@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>O Segredo da Floresta</title>
+</head>
+
+<body>
+    <main>
+        <!-- Introdução da História -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-floresta.png" alt="Imagem da floresta misteriosa">
+            <p>Em uma pequena aldeia, existia uma lenda sobre um segredo guardado nas profundezas da floresta. O que parecia um mito, logo se tornaria uma missão para aqueles corajosos o suficiente para desvendar o mistério. Você decidiu seguir a trilha e descobrir o que a floresta realmente esconde.</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na floresta</button>
+            <button class="btn-proximo" data-proximo="2">Voltar para a aldeia</button>
+        </div>
+
+        <!-- Primeira decisão -->
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1-floresta-entrada.png" alt="Imagem da entrada da floresta">
+            <p>Ao entrar na floresta, você percebe que a vegetação densa torna a caminhada difícil. A trilha se bifurca em dois caminhos. Um à esquerda leva a um rio sereno, enquanto o outro à direita segue para um campo misterioso coberto por névoa.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir para o rio</button>
+            <button class="btn-proximo" data-proximo="4">Seguir para o campo coberto de névoa</button>
+        </div>
+
+        <!-- Caminho do rio -->
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo3-rio.png" alt="Imagem do rio tranquilo">
+            <p>O rio é calmo e suas águas cristalinas refletem a luz do sol. Enquanto caminha ao longo da margem, você encontra uma pedra estranha com inscrições antigas. Ela parece apontar para uma caverna nas proximidades. Você deve seguir em frente?</p>
+            <button class="btn-proximo" data-proximo="5">Entrar na caverna</button>
+            <button class="btn-proximo" data-proximo="6">Explorar mais o rio</button>
+        </div>
+
+        <!-- Caminho da névoa -->
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-nevoa.png" alt="Imagem do campo misterioso">
+            <p>Ao entrar no campo coberto por névoa, você sente uma sensação de desconforto. A névoa é espessa e dificulta a visão, mas você continua. De repente, algo brilha ao longe. É uma árvore antiga com marcas misteriosas. Será que isso é uma pista?</p>
+            <button class="btn-proximo" data-proximo="7">Investigar a árvore</button>
+            <button class="btn-proximo" data-proximo="8">Sair da névoa e voltar para o rio</button>
+        </div>
+
+        <!-- Entrando na caverna -->
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5-caverna.png" alt="Imagem da caverna sombria">
+            <p>A caverna é escura, mas você consegue ver algo brilhando à distância. Quando chega mais perto, encontra uma chave dourada com um símbolo peculiar. Parece que esta chave é a peça final para desvendar o segredo da floresta.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir para a árvore com o símbolo</button>
+        </div>
+
+        <!-- Investigando a árvore -->
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7-arvore.png" alt="Imagem da árvore misteriosa">
+            <p>Você se aproxima da árvore e, ao olhar mais de perto, percebe que as marcas formam um padrão. No centro da árvore, há um buraco em forma de chave. A chave dourada se encaixa perfeitamente!</p>
+            <button class="btn-proximo" data-proximo="10">Abrir o segredo da árvore</button>
+        </div>
+
+        <!-- O segredo revelado -->
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo10-segredo.png" alt="Imagem do segredo da floresta sendo revelado">
+            <p>Ao girar a chave, a árvore se abre, revelando uma passagem secreta. A floresta, que antes parecia apenas um lugar comum, agora guarda o maior segredo de todos: um portal para um mundo mágico e desconhecido. Você decidiu que, ao invés de voltar para a aldeia, exploraria o novo mundo que se revelava diante de seus olhos.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o novo mundo</button>
+        </div>
+
+        <!-- Voltar à aldeia -->
+        <div class="passo" id="passo-2">
+            <p>Você decide voltar para a aldeia e contar aos outros sobre a misteriosa floresta, mas algo em seu coração diz que o segredo da floresta ainda está esperando por alguém para ser descoberto.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar para a floresta</button>
+        </div>
+
+        <!-- Final do jogo -->
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-mundo-magico.png" alt="Imagem do novo mundo mágico">
+            <p>Você adentra o portal e se encontra em um mundo repleto de criaturas fantásticas e paisagens surreais. A floresta, na verdade, guardava um portal para um reino encantado, e agora você se tornaria parte da lenda que atravessaria gerações. O segredo foi revelado.</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
